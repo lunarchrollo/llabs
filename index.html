@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="We develop free Software & We also craft the design of the internet for a better looking minimalist digital world" />
+  <meta name="author" content="ffan.dev" />
+  <title>ffan.dev | Install Free Extensions </title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-[#141517] font-sans">
+
+    <!-- Header -->
+<header class="fixed top-0 left-0 w-full z-30 bg-white/0 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between relative">
+    <!-- Logo (SVG file) -->
+    <div class="h-8">
+      <img src="logo.svg" alt="WunuLabs Logo" class="h-full object-contain" />
+    </div>
+  </div>
+</header>
+
+  <!-- Menu Button (appears inside header, but is layered above everything) -->
+  <button id="menuToggle"
+    class="fixed top-3 right-4 w-10 h-10 rounded-full bg-[#e4e4e4] flex items-center justify-center z-50 group">
+    <!-- Horizontal line -->
+    <span class="absolute w-7 h-0.5 bg-[#202020] transition-transform duration-200 group-[.open]:rotate-45"></span>
+    <!-- Vertical line -->
+    <span class="absolute w-0.5 h-7 bg-[#202020] transition-transform duration-200 group-[.open]:-rotate-45"></span>
+  </button>
+
+
+<!-- Fullscreen Overlay Menu -->
+<div id="overlayMenu"
+  class="fixed inset-0 bg-[#141517] text-[#e4e4e4] flex items-center justify-end transition-all duration-500 transform translate-x-full opacity-0 pointer-events-none z-40">
+  <nav class="space-y-6 text-right text-2xl font-medium px-12">
+    <a href="#" class="block hover:underline hover:text-orange-500 hover:decoration-orange-500 focus:text-orange-500 focus:underline focus:decoration-orange-500 active:text-orange-500 active:underline active:decoration-orange-500">>‎<span style="display:inline-block; width:15px;"></span>products</a>
+    <a href="#" class="block hover:underline hover:text-orange-500 hover:decoration-orange-500 focus:text-orange-500 focus:underline focus:decoration-orange-500 active:text-orange-500 active:underline active:decoration-orange-500">><span style="display:inline-block; width:15px;"></span>solutions</a>
+    <a href="#" class="block hover:underline hover:text-orange-500 hover:decoration-orange-500 focus:text-orange-500 focus:underline focus:decoration-orange-500 active:text-orange-500 active:underline active:decoration-orange-500">><span style="display:inline-block; width:15px;"></span>industries</a>
+    <a href="#" class="block hover:underline hover:text-orange-500 hover:decoration-orange-500 focus:text-orange-500 focus:underline focus:decoration-orange-500 active:text-orange-500 active:underline active:decoration-orange-500">><span style="display:inline-block; width:15px;"></span>the company</a>
+    <a href="#" class="block hover:underline hover:text-orange-500 hover:decoration-orange-500 focus:text-orange-500 focus:underline focus:decoration-orange-500 active:text-orange-500 active:underline active:decoration-orange-500">><span style="display:inline-block; width:15px;"></span>for business</a>
+  </nav>
+</div>
+  <script>
+    const toggleBtn = document.getElementById('menuToggle');
+    const overlayMenu = document.getElementById('overlayMenu');
+
+    let isOpen = false;
+
+    toggleBtn.addEventListener('click', () => {
+      isOpen = !isOpen;
+
+      // Toggle icon shape
+      toggleBtn.classList.toggle('open', isOpen);
+
+      // Toggle overlay menu
+      overlayMenu.classList.toggle('translate-x-0', isOpen);
+      overlayMenu.classList.toggle('translate-x-full', !isOpen);
+      overlayMenu.classList.toggle('opacity-100', isOpen);
+      overlayMenu.classList.toggle('opacity-0', !isOpen);
+      overlayMenu.classList.toggle('pointer-events-auto', isOpen);
+      overlayMenu.classList.toggle('pointer-events-none', !isOpen);
+    });
+  </script>
+<div style="height: 70px;"></div>
+<div style="width: calc(100% - 30px); height: calc(100% - 30px); margin: 15px; padding: 30px; background-image: url('bc.jpg'); background-size: cover; background-position: center; border-radius: 50px;">
+
+<style>
+@keyframes gradientMove{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+</style>
+<p style="font-size:2.3rem; color: white;">enjoy minimalism for <span style="color: white;">FREE</span></p>
+
+<p style="font-size: 0.9rem; color: white;">Our mission is to foster a cleaner, more purposeful internet. ^_^</p>
+<div style="height: 15px;"></div>
+
+<div style="display: flex; gap: 10px;">
+  <!-- Button 1 -->
+  <button style="
+    background-color: #e4e4e4;
+    font-size: 0.9rem;
+    color: black;
+    border: 1.5px solid #e4e4e4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='transparent'; this.style.color='white'"
+  onmouseout="this.style.backgroundColor='white'; this.style.color='black'">
+    Our apps
+  </button>
+
+  <!-- Button 2 -->
+  <button style="
+    background-color: transparent;
+    color: #e4e4e4;
+    border: 1.5px solid #e4e4e4;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='white'; this.style.color='black'"
+  onmouseout="this.style.backgroundColor='transparent'; this.style.color='white'">
+    Contact us
+  </button>
+</div>
+
+</div>
+
+<div style="
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  margin: 15px;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+">
+  <span style="color: #202020; font-size: 11px; font-weight: 500;">UX & UI matter — a clean, minimalist site keeps users engaged. WHY?</span>
+  <button style="
+    background-color: #202020;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 18px;
+    font-size: 11px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  "
+  onmouseover="this.style.backgroundColor='white'; this.style.color='#202020'"
+  onmouseout="this.style.backgroundColor='#202020'; this.style.color='white'">
+    Download Report
+  </button>
+</div>
+
+<div style="height: 25px;"></div>
+
+<div style="
+  height: 30px;
+  width: 100%;
+  color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+">
+  Our work ;)
+</div>
+
+<div style="
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  gap: 16px;
+  padding-left: 0px;
+  margin: 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+">
+
+<!-- Box 0 -->
+  <div style="
+    width: 0vh;
+    height: 40vh;
+    background-color: #FF573C;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    flex-shrink: 0;
+  "></div>
+  
+  
+  <!-- Box 1 -->
+  <div style="
+    width: 42vh;
+    height: 42vh;
+    background-color: #e4e4e4;
+    margin: 15px 0;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    flex-shrink: 0;
+  "></div>
+  
+<!-- Box 0 -->
+  <div style="
+    width: 0vh;
+    height: 40vh;
+    background-color: #FF573C;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    flex-shrink: 0;
+  "></div>
+  
+  <!-- Box 2 -->
+  <div style="
+    width: 42vh;
+    height: 42vh;
+    background-color: #e4e4e4;
+    margin: 15px 0;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    flex-shrink: 0;
+  "></div>
+
+<!-- Box 0 -->
+  <div style="
+    width: 0vh;
+    height: 40vh;
+    background-color: #FF573C;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    flex-shrink: 0;
+  "></div>
+  
+  <!-- Box 3 -->
+  <div style="
+    width: 42vh;
+    height: 42vh;
+    background-color: #e4e4e4;
+    margin: 15px 0;
+    scroll-snap-align: start;
+    border-radius: 40px;
+    flex-shrink: 0;
+  "></div>
+</div>
+
+<div style="width: 100%; max-width: 300px; text-align: left; margin: 25px; margin-top: 80px;">
+  <!-- Image -->
+<div style="
+  width: 0;
+  height: 0;
+  border-left: 10vw solid transparent;
+  border-right: 10vw solid transparent;
+  border-bottom: 16vw solid #d403e1;
+  margin-top: 40px;">
+</div>
+
+  <!-- Text Content -->
+  <div style="margin-top: 20px; font-size: 16px; color: white; font-weight: 500;">
+    Customazition
+  </div>
+    <div style="margin-top: 7px; font-size: 12px; color: grey;">
+    We create clean, tailored designs and software that fit your exact needs. No clutter, just simple, functional solutions built uniquely for you.
+  </div>
+  
+  
+  
+  
+  <!-- Circle -->
+<div style="
+  width: 20vw;
+  height: 20vw;
+  background-color: #03ccff;
+  border-radius: 50%;
+  margin-top: 40px;">
+</div>
+
+<!-- Text Content -->
+<div style="margin-top: 20px; font-size: 16px; color: white; font-weight: 500;">
+  Complete Control
+</div>
+<div style="margin-top: 7px; font-size: 12px; color: grey;">
+  We build tools that put you in charge. From design to functionality, you get full control to manage, scale, and adapt as you grow.
+</div>
+
+
+
+<!-- Cube -->
+<div style="
+  width: 19vw;
+  height: 19vw;
+  background-color: #09fbff;
+  margin-top: 40px;">
+</div>
+
+<!-- Text Content -->
+<div style="margin-top: 20px; font-size: 16px; color: white; font-weight: 500;">
+  Ongoing Support
+</div>
+<div style="margin-top: 7px; font-size: 12px; color: grey;">
+  Our work doesn’t end at launch. We’re here to maintain, improve, and support your product—so it keeps running smoothly, long after it goes live.
+</div>
+
+
+</div>
+
+
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {},
+    },
+  }
+</script>
+</body>
+</html>
